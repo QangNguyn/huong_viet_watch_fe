@@ -1,0 +1,131 @@
+.cart-container {
+  background-color: #242424;
+  padding: 4rem 0;
+  table {
+    width: 100%;
+    thead {
+      border-bottom: 1px solid #ccc;
+      tr {
+        th {
+          padding: 2rem 0;
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+    }
+    tbody {
+      tr {
+        margin-top: 1rem;
+        td {
+          padding-top: 2rem;
+          .product-info {
+            .product-left {
+              flex: 2;
+              display: flex;
+              align-items: center;
+              .product__img {
+                width: 100px;
+                height: 100px;
+                flex-shrink: 0;
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                }
+              }
+              .product__name {
+                font-size: 1.7rem;
+                color: #fff;
+                margin-left: 1.4rem;
+              }
+            }
+            .product-right {
+              flex: 1;
+              p {
+                font-size: 1.6rem;
+                margin-right: 2rem;
+                color: #fff;
+                text-align: end;
+              }
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .product-count {
+            p {
+              font-size: 1.6rem;
+              color: #fff;
+              padding-left: 2rem;
+            }
+          }
+          .product-total {
+            p {
+              font-size: 1.6rem;
+              color: #fff;
+              padding-left: 1rem;
+            }
+          }
+          button {
+            background-color: orange;
+            border: none;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.bill-info {
+  margin: 2rem;
+  border: 3px dotted #fff;
+  padding: 3rem;
+  color: #fff;
+  &__title {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    border-bottom: 2px solid #ccc;
+  }
+  &__content {
+    & > div {
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+      p {
+        flex: 1;
+        text-align: end;
+        font-size: 1.4rem;
+      }
+      &.bill-ship {
+        border-bottom: 2px solid#ccc;
+      }
+      &.bill-total {
+        h3 {
+          font-size: 2.2rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  button {
+    color: #fff;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    border: 1px solid orange;
+    display: flex;
+    margin-left: auto;
+    transition: 0.5s;
+    text-transform: uppercase;
+    &:hover {
+      background-color: orange;
+    }
+  }
+}
