@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -105,116 +105,69 @@
               >Trang chủ<i class="fa-solid fa-chevron-right"></i
             ></a>
           </li>
-          <li><a href="#">Giỏ hàng</a></li>
+          <li><a href="#">Thông tin đặt hàng</a></li>
         </ul>
       </div>
     </div>
+
     <div class="content">
-      <!-- cart -->
-      <div class="cart-container">
+      <div class="my-account-container">
         <div class="container">
-          <div class="row">
-            <div class="col-7">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col" style="width: 60%">Sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Tổng</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="product-info">
-                        <div class="product-left">
-                          <div class="product__img">
-                            <img
-                              src="https://woodstock.temashdesign.me/watch/wp-content/uploads/sites/3/2016/03/seamaster-sp-01-1-350x350.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="product__name">
-                            <p>Seamaster 300 Spectre</p>
-                          </div>
-                        </div>
-                        <div class="product-right">
-                          <p>12.000.000đ</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-count">
-                        <p>1</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-total">
-                        <p>12.000.000đ</p>
-                      </div>
-                    </td>
-                    <td>
-                      <button><i class="fa-solid fa-xmark"></i></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="product-info">
-                        <div class="product-left">
-                          <div class="product__img">
-                            <img
-                              src="https://woodstock.temashdesign.me/watch/wp-content/uploads/sites/3/2016/03/seamaster-sp-01-1-350x350.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="product__name">
-                            <p>Seamaster 300 Spectre</p>
-                          </div>
-                        </div>
-                        <div class="product-right">
-                          <p>12.000.000đ</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-count">
-                        <p>1</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-total">
-                        <p>12.000.000đ</p>
-                      </div>
-                    </td>
-                    <td>
-                      <button><i class="fa-solid fa-xmark"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-5">
-              <div class="bill-info">
-                <h3 class="bill-info__title">Thông tin đơn hàng</h3>
-                <div class="bill-info__content">
-                  <div class="bill-subtotal">
-                    <h3 class="bill-subtotal__heading">Thành tiền</h3>
-                    <p class="bill-subtotal__price">12.000.000đ</p>
-                  </div>
-                  <div class="bill-ship">
-                    <h3 class="bill-ship__heading">Phí vận chuyển</h3>
-                    <p class="bill-ship__price">30.000đ</p>
-                  </div>
-                  <div class="bill-total">
-                    <h3 class="bill-total__heading">Tổng</h3>
-                    <p class="bill-total__price">12.030.000đ</p>
+          <form>
+            <h2 class="text-white text-center">Thông tin đặt hàng</h2>
+            <div class="form-wrapper">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Email *</label>
+                    <input type="text" />
                   </div>
                 </div>
-                <button>Thanh toán</button>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Họ tên</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Địa chỉ</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Số điện thoại</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Mã giảm giá (Nếu có)</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Ghi chú</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group mb-3 text-white">
+                    <label>Phương thức thanh toán</label>
+                    <select name="" id="">
+                      <option value="">Thanh toán qua ngân hàng</option>
+                      <option value="">Thanh toán khi nhận hàng</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="btn page-btn">Đặt hàng</button>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

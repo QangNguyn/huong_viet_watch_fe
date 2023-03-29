@@ -85,6 +85,7 @@
           height: 5px;
           background-color: transparent;
           pointer-events: none;
+          padding: 0;
           &::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 10px;
@@ -177,6 +178,16 @@
           width: 25%;
         }
       }
+    }
+  }
+}
+.search-result {
+  background-color: #242424;
+  padding: 4rem 0;
+  &__title {
+    h3 {
+      font-size: 2.5rem;
+      color: #fff;
     }
   }
 }
