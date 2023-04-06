@@ -111,63 +111,188 @@
     </div>
 
     <div class="content">
-      <div class="my-account-container">
-        <div class="container">
-          <form>
-            <h2 class="text-white text-center">Thông tin đặt hàng</h2>
-            <div class="form-wrapper">
-              <div class="row g-4">
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Email *</label>
-                    <input type="text" />
-                  </div>
+      <div id="checkout" style="padding-top: 3rem">
+        <div class="checkout__form">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="checkout__form--billing">
+                  <div class="form__billing--title">Thông tin khách hàng</div>
+                  <form
+                    action="http://huongviet.unicode.vn/place-order"
+                    class="form__billing"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="CAL8nIDuNZugWZVpKVQEn8fc308TxQ4A7rCxPToU"
+                    />
+                    <div class="form-group">
+                      <label for="">Họ & Tên</label>
+                      <input type="text" name="name" />
+                    </div>
+
+                    <div class="email--phone">
+                      <div class="col-sm-12 col-md-6">
+                        <label for="email">địa chỉ email <span>*</span></label>
+                        <input type="text" name="email" id="email" />
+                      </div>
+
+                      <div class="col-sm-12 col-md-6">
+                        <label for="phone">số điện thoại <span>*</span></label>
+                        <input type="text" name="phone" id="phone" />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Tỉnh</label>
+                      <select
+                        name="province_id"
+                        class="form-control"
+                        id="province"
+                        value=""
+                      >
+                        <option value="">--Chọn tỉnh--</option>
+                        <option value="1">Thành phố Hà Nội</option>
+                        <option value="2">Tỉnh Hà Giang</option>
+                        <option value="3">Tỉnh Cao Bằng</option>
+                        <option value="4">Tỉnh Bắc Kạn</option>
+                        <option value="5">Tỉnh Tuyên Quang</option>
+                        <option value="6">Tỉnh Lào Cai</option>
+                        <option value="7">Tỉnh Điện Biên</option>
+                        <option value="8">Tỉnh Lai Châu</option>
+                        <option value="9">Tỉnh Sơn La</option>
+                        <option value="10">Tỉnh Yên Bái</option>
+                        <option value="11">Tỉnh Hoà Bình</option>
+                        <option value="12">Tỉnh Thái Nguyên</option>
+                        <option value="13">Tỉnh Lạng Sơn</option>
+                        <option value="14">Tỉnh Quảng Ninh</option>
+                        <option value="15">Tỉnh Bắc Giang</option>
+                        <option value="16">Tỉnh Phú Thọ</option>
+                        <option value="17">Tỉnh Vĩnh Phúc</option>
+                        <option value="18">Tỉnh Bắc Ninh</option>
+                        <option value="19">Tỉnh Hải Dương</option>
+                        <option value="20">Thành phố Hải Phòng</option>
+                        <option value="21">Tỉnh Hưng Yên</option>
+                        <option value="22">Tỉnh Thái Bình</option>
+                        <option value="23">Tỉnh Hà Nam</option>
+                        <option value="24">Tỉnh Nam Định</option>
+                        <option value="25">Tỉnh Ninh Bình</option>
+                        <option value="26">Tỉnh Thanh Hóa</option>
+                        <option value="27">Tỉnh Nghệ An</option>
+                        <option value="28">Tỉnh Hà Tĩnh</option>
+                        <option value="29">Tỉnh Quảng Bình</option>
+                        <option value="30">Tỉnh Quảng Trị</option>
+                        <option value="31">Tỉnh Thừa Thiên Huế</option>
+                        <option value="32">Thành phố Đà Nẵng</option>
+                        <option value="33">Tỉnh Quảng Nam</option>
+                        <option value="34">Tỉnh Quảng Ngãi</option>
+                        <option value="35">Tỉnh Bình Định</option>
+                        <option value="36">Tỉnh Phú Yên</option>
+                        <option value="37">Tỉnh Khánh Hòa</option>
+                        <option value="38">Tỉnh Ninh Thuận</option>
+                        <option value="39">Tỉnh Bình Thuận</option>
+                        <option value="40">Tỉnh Kon Tum</option>
+                        <option value="41">Tỉnh Gia Lai</option>
+                        <option value="42">Tỉnh Đắk Lắk</option>
+                        <option value="43">Tỉnh Đắk Nông</option>
+                        <option value="44">Tỉnh Lâm Đồng</option>
+                        <option value="45">Tỉnh Bình Phước</option>
+                        <option value="46">Tỉnh Tây Ninh</option>
+                        <option value="47">Tỉnh Bình Dương</option>
+                        <option value="48">Tỉnh Đồng Nai</option>
+                        <option value="49">Tỉnh Bà Rịa - Vũng Tàu</option>
+                        <option value="50">Thành phố Hồ Chí Minh</option>
+                        <option value="51">Tỉnh Long An</option>
+                        <option value="52">Tỉnh Tiền Giang</option>
+                        <option value="53">Tỉnh Bến Tre</option>
+                        <option value="54">Tỉnh Trà Vinh</option>
+                        <option value="55">Tỉnh Vĩnh Long</option>
+                        <option value="56">Tỉnh Đồng Tháp</option>
+                        <option value="57">Tỉnh An Giang</option>
+                        <option value="58">Tỉnh Kiên Giang</option>
+                        <option value="59">Thành phố Cần Thơ</option>
+                        <option value="60">Tỉnh Hậu Giang</option>
+                        <option value="61">Tỉnh Sóc Trăng</option>
+                        <option value="62">Tỉnh Bạc Liêu</option>
+                        <option value="63">Tỉnh Cà Mau</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Huyện</label>
+                      <select
+                        name="district_id"
+                        class="form-control"
+                        id="district"
+                        value=""
+                      >
+                        <option value="">--Chọn huyện--</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Xã</label>
+                      <select
+                        name="ward_id"
+                        class="form-control"
+                        id="ward"
+                        value=""
+                      >
+                        <option value="">--Chọn xã--</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="">Địa chỉ</label>
+                      <input type="text" name="address" />
+                    </div>
+                  </form>
                 </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Họ tên</label>
-                    <input type="text" />
+              </div>
+
+              <div class="col-md-6 col-sm-12">
+                <div class="checkout__table--order">
+                  <h2>Hóa đơn</h2>
+
+                  <div class="table__order">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="product-name">sản phẩm</th>
+                          <th class="product-total">tạm tính</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cart__item">
+                          <td class="product-name">
+                            Fresh Red Chili
+                            <span>x1</span>
+                          </td>
+                          <td class="product-total">45000</td>
+                        </tr>
+                      </tbody>
+
+                      <tfoot>
+                        <tr class="order-total">
+                          <td>Tổng cộng</td>
+                          <td>
+                            <p>54,450 đ</p>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Địa chỉ</label>
-                    <input type="text" />
+                  <div class="method__payment">
+                    <button class="method__payment--btn" type="submit">
+                      đặt hàng
+                    </button>
                   </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Số điện thoại</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Mã giảm giá (Nếu có)</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Ghi chú</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group mb-3 text-white">
-                    <label>Phương thức thanh toán</label>
-                    <select name="" id="">
-                      <option value="">Thanh toán qua ngân hàng</option>
-                      <option value="">Thanh toán khi nhận hàng</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <button type="submit" class="btn page-btn">Đặt hàng</button>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

@@ -111,110 +111,97 @@
     </div>
     <div class="content">
       <!-- cart -->
-      <div class="cart-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-7">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col" style="width: 60%">Sản phẩm</th>
-                    <th scope="col">Số lượng</th>
-                    <th scope="col">Tổng</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="product-info">
-                        <div class="product-left">
-                          <div class="product__img">
-                            <img
-                              src="https://woodstock.temashdesign.me/watch/wp-content/uploads/sites/3/2016/03/seamaster-sp-01-1-350x350.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="product__name">
-                            <p>Seamaster 300 Spectre</p>
-                          </div>
-                        </div>
-                        <div class="product-right">
-                          <p>12.000.000đ</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-count">
-                        <p>1</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-total">
-                        <p>12.000.000đ</p>
-                      </div>
-                    </td>
-                    <td>
-                      <button><i class="fa-solid fa-xmark"></i></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="product-info">
-                        <div class="product-left">
-                          <div class="product__img">
-                            <img
-                              src="https://woodstock.temashdesign.me/watch/wp-content/uploads/sites/3/2016/03/seamaster-sp-01-1-350x350.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="product__name">
-                            <p>Seamaster 300 Spectre</p>
-                          </div>
-                        </div>
-                        <div class="product-right">
-                          <p>12.000.000đ</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-count">
-                        <p>1</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-total">
-                        <p>12.000.000đ</p>
-                      </div>
-                    </td>
-                    <td>
-                      <button><i class="fa-solid fa-xmark"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-5">
-              <div class="bill-info">
-                <h3 class="bill-info__title">Thông tin đơn hàng</h3>
-                <div class="bill-info__content">
-                  <div class="bill-subtotal">
-                    <h3 class="bill-subtotal__heading">Thành tiền</h3>
-                    <p class="bill-subtotal__price">12.000.000đ</p>
-                  </div>
-                  <div class="bill-ship">
-                    <h3 class="bill-ship__heading">Phí vận chuyển</h3>
-                    <p class="bill-ship__price">30.000đ</p>
-                  </div>
-                  <div class="bill-total">
-                    <h3 class="bill-total__heading">Tổng</h3>
-                    <p class="bill-total__price">12.030.000đ</p>
-                  </div>
+      <div id="page-cart">
+        <div class="cart-table">
+            <div class="container ">
+
+                <div class="row mb-5">
+                    <div class="col-12 ">
+                        <form action="#" class="cart-table--responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="cart-table--image"><span>hình ảnh</span></td>
+                                        <td class="cart-table--product"><span>sản phẩm</span></td>
+                                        <td class="cart-table--price"><span>giá</span></td>
+                                        <td class="cart-table--quality"><span>số lượng</span></td>
+                                        <td class="cart-table-total"><span>tạm tính</span></td>
+                                        <td class="cart-table--remove"><span>xóa</span></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cart-table--image"><img src="https://htmldemo.net/angara/angara/img/cart/1.jpg" alt=""></td>
+                                        <td class="cart-table--product"><a href="#">Vestibulum suscipit</a></td>
+                                        <td class="cart-table--price"><span>£165.00</span></td>
+                                        <td class="cart-table--quality"><input type="number" value="1" min="1"></td>
+                                        <td class="cart-table--total"><span>£165.00</span></td>
+                                        <td class="cart-table--remove"><a href="#"><i class="fa fa-times"></a></td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td class="cart-table--image"><img src="https://woodstock.temashdesign.me/watch/wp-content/uploads/sites/3/2016/03/montbrilliant-01-350x350.jpg" alt=""></td>
+                                        <td class="cart-table--product"><a href="#">Vestibulum dictum magna</a></td>
+                                        <td class="cart-table--price"><span>£165.00</span></td>
+                                        <td class="cart-table--quality"><input type="number" value="1" min="1"></td>
+                                        <td class="cart-table--total"><span>£165.00</span></td>
+                                        <td class="cart-table--remove"><a href="#"><i class="fa fa-times"></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
                 </div>
-                <button>Thanh toán</button>
-              </div>
+
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-md-8">
+                        <ul class="coupon-redrect">
+                            <li><a href="">cập nhật giỏ hàng</a></li>
+                            <li><a href="">tiếp tục mua thêm</a></li>
+                        </ul>
+                        <div class="coupon-title">
+                            <h3>Phiếu mua hàng</h3>
+                            <p>Nhập mã phiếu giảm giá của bạn nếu bạn có.</p>
+                        </div>
+                        <form action="" class="coupon-form">
+                            <input type="text" placeholder="Mã giảm giá">
+                            <button type="submit">áp dụng</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="cart-totals">
+                            <h2>Thanh toán</h2>
+                            <form action="">
+                                <div class="cart-totals--sub">
+                                    <label>subtotal</label>
+                                    <p>£215.00</p>
+                                </div>
+                                <div class="cart-totals--shipping">
+                                    <div class="shipping-left"><label>giao hàng</label></div>
+                                    <div class="shipping-right">
+                                        <div>
+                                            <input type="checkbox" id="flatrate">
+                                            <label for="flatrate">Phụ thu: <span>£7.00</span></label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="freeship">
+                                            <label for="freeship">Miễn phí giao hàng</label>
+                                        </div>
+                                        <div>Chi phí vận chuyển</div>
+                                    </div>
+
+                                </div>
+                                <div class="cart-totals--total">
+                                    <label>tổng cộng</label>
+                                    <p>£215.00</p>
+                                </div>
+                                <button type="submit">Thanh toán</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
